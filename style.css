@@ -13,13 +13,16 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* ################ utility classes ################# */
 
 .container {
   max-width: 1200px;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: auto
+
 }
 
 /* ############### navbar styling ####################  */
@@ -46,7 +49,7 @@ body {
   justify-content: space-between;
   height: 64px;
 
-  align-items: center;
+
 }
 .menu-items {
   order: 2;
@@ -61,6 +64,7 @@ body {
 .logo {
   order: 1;
   font-size: 3rem;
+  
 }
 .navbar a {
   color: #444;
@@ -80,7 +84,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  width: 100%;
+  top: -5px;
 }
 .showcase-container {
   display: flex;
@@ -116,15 +121,16 @@ body {
 
 #about h2 {
   font-size: 3.2rem;
+
 }
 #about p {
   font-size: 1.6rem;
   color: #555;
 }
 #about .small {
-  font-size: 1.6rem;
-  color: #666;
-  font-weight: 600;
+  font-size: 2.2rem;
+  color: #555;
+  font-weight: bold;
 }
 @keyframes about-img-animation {
   100% {
@@ -321,7 +327,8 @@ body {
 
 @media (max-width: 480px) {
   #food h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
   }
 
   .img-content h3 {
@@ -437,18 +444,19 @@ body {
   }
 
   .food-title {
-    font-size: 1.7rem;
+    font-size: 25px;
   }
   .food-description .food-price{
     font-size: 15px;
   }
 
   .food-description p {
-    font-size: 1rem;
+    font-size: 15px;
   }
 
   .food-menu-heading {
     font-size: 2.2rem;
+    font-weight: bold;
   }
 }
 /* ####################### testimonial area ################## */
@@ -498,7 +506,12 @@ body {
 }
 @media (max-width: 700px){
     .testimonial-text{
-        font-size: 10px;
+        font-size: 15px;
+    }
+    .testimonial-container{
+        flex-direction: column;
+        margin-top: 10px;
+        
     }
 }
 
@@ -506,12 +519,13 @@ body {
 
 #contact {
   padding: 5 rem 0;
-  background: rgb(226, 226, 226);
+  
 }
 .contact-container {
   display: flex;
   background: #fff;
   padding-top: 20px;
+  justify-content: center;
 }
 .contact-image {
   width: 50%;
@@ -527,6 +541,7 @@ body {
   padding: 1rem;
   width: 50%;
   margin: auto;
+  background-color: #fff;
 }
 .form-container input {
   display: block;
@@ -575,14 +590,18 @@ body {
 .ending {
   color: #ddd;
   text-align: center;
-  padding: 23px;
-  margin-top: 20px;
   font-size: 3.2rem;
   background-color: #555;
   opacity: 0.8;
   font-weight: 600;
+width: 100%;  
+height: 55px;
 }
-
+@media (max-width: 700px){
+.ending{
+font-size: 18px;
+}
+}
 /* ##############  media queries ################## */
 
 @media (max-width: 768px) {
@@ -599,6 +618,7 @@ body {
     display: block;
     position: relative;
     height: 64px;
+    top: -6px;
   }
 
   .navbar-container input[type="checkbox"] {
@@ -674,6 +694,7 @@ body {
 
   .navbar .menu-items li {
     margin-bottom: 3rem;
+
     font-size: 2rem;
     font-weight: 500;
     list-style: none;
@@ -681,9 +702,10 @@ body {
 
   .logo {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: -6px;
+    left: 324px;
     font-size: 3rem;
+    
   }
 
   /* Hamburger Animation */
